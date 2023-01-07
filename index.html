@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>FORM</title>
+</head>
+<body>
+    <form class="container">
+        <div class="form__container">
+            <div class="form__container--left">
+                <h2>Formulario en HTML con @Dudleycode</h2>
+                <p class="form__subtitle">Los campos con * son obligatorios </p>
+                <label class="form__label">Nombre y apellido: *</label>
+                <input class="form__inputs" type="text" placeholder="Dudley code" required>
+                <label class="form__label form__label--elements">Email o correo electronico: *</label>
+                <input class="form__inputs" type="email" placeholder="dudleycode@gmail.com" required>
+                <label class="form__label form__label--elements">Numero de telefono: *</label>
+                <input class="form__inputs" type="number" placeholder="677788763" required>
+            </div>
+            <div class="form__container--right">
+                <label class="form__label form__label--select">Estoy interesado en… *</label>
+                <select class="form__select">
+                    <!-- <option label=" " value="vacio"></option> -->
+                    <option value="html">Aprender HTML</option>
+                    <option value="css">Aprender CSS</option>
+                    <option value="htmlycss">Aprender HTML y CSS</option>
+                    <option value="javascript">Aprender JavaScript</option>
+                </select>
+                <label class="form__label form__label--elements">Mensaje</label>
+                <textarea class="form__textarea" cols="30" rows="6" maxlength="100" minlength="20" placeholder="Agrega cualquier informacion extra a tu consulta"></textarea>
+                <label class="form__label form__label--checkbox"><input type="checkbox" value="" required> He leido y acepto la <a class="privacy__form" href="#">politica de privacidad</a> *</label>
+                <div class="formButton">
+                    <button class="form__button" type="submit">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
